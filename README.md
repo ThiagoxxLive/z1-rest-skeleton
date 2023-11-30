@@ -16,6 +16,8 @@ Esta ferramenta foi desenvolvida pensando em uso em servidores compartilhados (s
 
 2 - Configurar as variáveis de ambiente no arquivo .env.dist.
 
+3 - Setar o nome da base de dados no arquivo **Config/config.yml**
+
 Após instalação, basta colocar na raiz do servidor, o arquivo **.htaccess** já está configurado.
 
 Caso queira utilizar **Docker**, a ferramenta já possui o **docker-compose.yml**, basta rodar o comando:
@@ -141,6 +143,7 @@ Caso sucesso, deve retornar o status 204 (NO CONTENT).
 
 
 **Middlewares**
+
 Para a utilização de middlewares, basta criar o array antes da função de callback do roteador, exemplo:
 
 ```php
