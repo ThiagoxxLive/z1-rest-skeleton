@@ -1,0 +1,7 @@
+/vendor
+/files
+app/src/Jobs
+.env
+.DS_Store
+/app/src/Config/parameters.yml
+version.txt

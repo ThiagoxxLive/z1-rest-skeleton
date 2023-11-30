@@ -1,0 +1,31 @@
+imports:
+    - { resource: parameters.yml }
+
+# config/services.yaml
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    ##Services
+
+    App\Services\Example\ExampleService:
+        class: App\Services\Example\ExampleService
+        public: true
+        arguments:
+            - '@App\Repositories\Example\ExampleRepository'
+
+    ##Repositories
+    App\Repositories\Example\ExampleRepository:
+        class: App\Repositories\Example\ExampleRepository
+        public: true
+        arguments:            
+            - '@ApiConnection'
+
+    ##Connections
+    ApiConnection:
+        class: App\Db\Connections\Connection
+        public: true
+        arguments:            
+            - '%db_api%'

@@ -1,0 +1,23 @@
+{
+    "name": "thiago/z1",
+    "description": "Z1's Web Environment",
+    "authors": [
+        {
+            "name": "ThiagoxxLive",
+            "email": "thiagoxx@live.com"
+        }
+    ],
+    
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core",
+            "App\\": "app/src"
+        }
+    },
+
+    "require": {        
+        "symfony/dependency-injection": "^6.0",
+        "symfony/config": "^6.0",
+        "symfony/yaml": "^6.0"
+    }
+}
