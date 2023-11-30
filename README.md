@@ -18,7 +18,7 @@ Esta ferramenta foi desenvolvida pensando em uso em servidores compartilhados (s
 
 2 - Configurar as variáveis de ambiente no arquivo .env.dist.
 
-3 - Setar o nome da base de dados no arquivo **Config/config.yml**
+3 - Setar o nome da base de dados no arquivo **Config/parameters.yml**
 
 Após instalação, basta colocar na raiz do servidor, o arquivo **.htaccess** já está configurado.
 
