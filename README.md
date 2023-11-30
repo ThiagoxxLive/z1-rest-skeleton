@@ -103,11 +103,19 @@ use App\Controllers\Example\ExampleController;
     Restante do código
 */
 
+
+use App\Controllers\Example\ExampleController;
+
+/*
+    Restante do código
+*/
+
 $router->post('/v1/example', [
     function ($request) {
-        return new Response(ExampleController::getAction($request), Response::OK);
+        return new Response(ExampleController::postAction($request), Response::CREATED);
     }
 ]);
+
 
 ```
 Para a rota post, o conteúdo da requisição fica no objeto Request, no seu service, para receber a requisição basta transformar em um array antes de enviar para o banco.
