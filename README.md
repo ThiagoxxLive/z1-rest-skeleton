@@ -176,15 +176,15 @@ Exemplo de utilização:
 ```php
 public static function postAction(Request $request) : array {
 
-        //Campos a serem validados.
-        $requiredKeys = ['name', 'id_tenant'];
+    //Campos a serem validados.
+    $requiredKeys = ['name', 'id_tenant'];
 
-        if(!$request->validate($request, $requiredKeys)) {
-            throw new HttpMissingKeyException(Form::getMessage(), 400);
-        }
-
-        return self::getService()->create($request);
+    if(!$request->validate($request, $requiredKeys)) {
+        throw new HttpMissingKeyException(Form::getMessage(), 400);
     }
+
+    return self::getService()->create($request);
+}
 ```
 
 o array `$requiredKeys` é onde mapeamos os campos obrigatórios. 
