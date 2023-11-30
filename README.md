@@ -8,6 +8,8 @@ A única dependência externa desta ferramenta, é o container de injeção de d
 
 Esta ferramenta foi desenvolvida pensando em uso em servidores compartilhados (shared hostings).
 
+**Nota**: A biblioteca está homologada para trabalhar com PHP 8.2.
+
 ## Instalação
 
 
