@@ -185,7 +185,7 @@ Também, é possível validar alguns tipos de dados, vide exemplo:
 ```php
 public function create(array $data) : array {
 
-    if(FormValidator::validateLength($data['name'], 3)) {
+    if(!FormValidator::validateLength($data['name'], 3)) {
         throw new InvalidNameException('O nome deve conter pelo menos 3 caracteres.', 400);
     }
 
