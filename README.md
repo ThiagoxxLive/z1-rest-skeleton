@@ -107,13 +107,6 @@ use App\Controllers\Example\ExampleController;
     Restante do código
 */
 
-
-use App\Controllers\Example\ExampleController;
-
-/*
-    Restante do código
-*/
-
 $router->post('/v1/example', [
     function ($request) {
         return new Response(ExampleController::postAction($request), Response::CREATED);
